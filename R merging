@@ -1,0 +1,10 @@
+Although cleaning the done in Google Sheets, R Studio was used in order to load and merge the data.
+Doing this allowed me to merge mutiple files into one singular file that was then used for visualization in Tableau.
+
+First I load up the data into R
+jan_2022 <- read.csv("Cyclistic Trip Data January 2022.csv")
+feb_2022 <- read.csv("Cyclistic Trip Data February 2022.csv")
+mar_2022 <- read.csv("Cyclistic Trip Data March 2022.csv")
+
+I use bind_rows in order to merge the datasets into one complete dataset
+q1_2022 <- bind_rows(jan_2022, feb_2022, mar_2022)
